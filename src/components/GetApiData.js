@@ -4,6 +4,8 @@ import {connect} from "react-redux";
 
 import {getData} from "../store/actions";
 
+import './style.css';
+
 const GetApiData = ({getData,apiData,isFetching,error}) => {
 
 
@@ -17,8 +19,10 @@ const GetApiData = ({getData,apiData,isFetching,error}) => {
 
     
     return (
-      <div>
-         <button onClick={getData}>Get Dog Data</button>
+      <div>  
+        <div>
+        </div>     
+         <button onClick={getData} className="button"  ><span>Get Data </span></button>
         <h2>Get Dog Image: </h2>
         { apiData !== "" ? <img src={apiData}  alt="Dog Image Show Here" /> : '' }         
       </div>
