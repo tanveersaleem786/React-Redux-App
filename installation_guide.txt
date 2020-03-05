@@ -1,0 +1,6 @@
+npx create-react-app react-redux-app
+npm install redux --save
+npm install react-redux --save
+npm install redux-thunk --save
+
+npm install axios --save
